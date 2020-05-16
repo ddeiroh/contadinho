@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contadinho</title>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="/imagens/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/imagens/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/imagens/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/imagens/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/imagens/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/imagens/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/imagens/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/imagens/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imagens/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/imagens/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imagens/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/imagens/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imagens/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/imagens/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/imagens/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Estilos-->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/animate.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="instrucoes animated fadeIn slow">
+        <div class="instrucoes__info">
+            <h2 class="instrucoes__info__titulo">Olá!</h2>
+            <p class="instrucoes__info__desc">Apresento a você o contador de dinheiro. Esse pequeno projeto irá facilitar sua vida na hora de dividir o teu suado dinheirinho. Basta apenas que digite na caixa o valor e ele mostrará a quantidade de cédulas resultantes</p>
+            <button class="instrucoes__info__ok">Okay!</button>
+        </div>
+    </div>
+
+    <div class="fundo-img"></div>
+    
+    <div class="container">
+
+    <div class="indicativos">
+        <h1 class="indicativos__titulo-principal">Contador de Dinheiro</h1>
+        <img src="/imagens/comprar.svg" alt="Contador de dinheiro" class="indicativos__icon-principal">
+    </div> 
+
+    <div class="valor">
+        <div class="valor__cifrao">R$</div>
+        <input class="valor__campo" type="number" placeholder="Digite um valor aqui">
+        <button class="valor__botao">Contar</button>
+    </div>
+    
+    <span class="animacao animated slower">Calculando...</span>
+
+    <p class="resultado"></p>
+
+    <div class="footer">
+        <p class="footer__copyright">Copyright &copy;RoyalEleven 2020. <br>Todos os direitos reservados</p>
+        <div class="icons">
+            <a class="icons__linkedin" href="https://www.linkedin.com/in/devison-deir%C3%B3-2008b7185/"><i class='bx bxl-linkedin'></i></a>
+            <a class="icons__insta" href="https://www.instagram.com/d.deiro_/?hl=pt-br"><i class='bx bxl-instagram'></i></a>
+            <a class="icons__insta" href="https://github.com/devisondeiro"><i class='bx bxl-github' ></i></a>
+        </div>
+    </div>
+   
+</div>
+
+<script src="/js/calcular.js"></script>
+
+</body>
+</html>

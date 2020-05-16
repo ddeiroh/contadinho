@@ -1,0 +1,323 @@
+/*BODY*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*INSTRUÇÕES*/
+
+.instrucoes{
+    --preto-bg: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: var(--preto-bg);
+}
+
+.instrucoes__info{
+    padding: 3%;
+    width: 100%;
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    text-align: justify;
+    background: rgba(255,255,255,.175);
+}
+
+.instrucoes__info__titulo{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.instrucoes__info__desc{
+    font-size: 1.160rem;
+    text-align: justify;
+    margin: 5% 0;
+    font-weight: bold;
+}
+
+.instrucoes__info__ok{
+    width: 30%;
+    background: var(--verde-claro);
+    color: var(--verde-fonte);
+    font-size: 145%;
+    padding: 2%;
+    transform: translateX(125%);
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .2s ease-in-out;
+}
+
+.instrucoes__info__ok:hover{
+    background: var(--verde-medio);
+    box-shadow: var(--preto-100) 2px 2px 5px;
+    color: var(--branco);
+}
+
+.instrucoes--off{
+    display: none;
+}
+
+/*BACKGROUND*/
+
+.fundo-img{
+    background: url("/imagens/fundo_dinheiro (1).jpg");
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    position: absolute;
+    z-index: 1;
+}
+
+/*CONTAINER*/
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background: var(--preto-bg);
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+/*CONTAINER > indicativos*/
+
+.indicativos{
+    height: 20%;
+    flex-basis: auto;
+}
+
+.indicativos__titulo-principal{
+    font-size: 185%;
+    margin: 20px;
+}
+
+.indicativos__icon-principal{
+    width: 75px;
+    height: 75px;
+}
+
+/*CONTAINER > valor__saida*/
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.valor{
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.valor__cifrao{
+    width: 15%;
+    height: 40%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--verde-medio);
+    color: var(--verde-fonte);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor__campo{
+    width: 85%;
+    height: 40%;
+    font-size: 1.5rem;
+    background: var(--verde-claro);
+    color: var(--verde-fonte);
+    border-radius: 0 5px 5px 0;
+    transition: background .1s ease .1s;
+}
+
+.valor__campo:focus{
+    background: var(--verde-medio);
+}
+
+.valor__botao{
+    width: 60%;
+    height: 40%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: var(--verde-claro);
+    color: var(--verde-fonte);
+    transition: .2s ease-in-out;
+    border-radius: 5px;
+}
+
+.valor__botao:hover{
+    background: var(--verde-medio);
+    box-shadow: var(--preto-100) 2px 2px 5px;
+    color: var(--branco);
+}
+
+/*CONTAINER > resultado*/
+
+.resultado{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 300px;
+    background: var(--preto-50);
+    padding: 20px;
+    overflow-y: auto;
+    flex-basis: 20%;
+}
+
+.animacao{
+    display: none;
+    top:50%;
+    position: absolute;
+    z-index: 5;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background: var(--verde-claro);
+    padding: 15px;
+}
+
+/*CONTAINER - icons*/
+
+.icons{
+    flex-basis: 10%;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+i[class*="bxl"]{
+    margin: 2%;
+    color: var(--preto-100);
+    font-size: 2.3rem;
+    transition: .175s ease-in-out;
+    cursor: pointer;
+    transform: translateY(15%);
+    color: var(--verde-claro);
+}
+
+i[class*="bxl"]:hover{
+    color: var(--branco);
+    transform: scale(1.2);
+    transform: translateY(5%);
+    text-shadow: var(--preto-100) 2px 2px 5px;
+}
+
+/*CONTAINER > footer*/
+
+.footer{
+    font-weight: bold; 
+    flex-basis: 10%;
+}
+
+.footer__copyright{
+    font-size: 1.2rem;
+    margin-bottom: 5%; 
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 320px){
+    .indicativos{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 20px 10px 0 ;
+    }
+
+    .indicativos__titulo-principal{
+        margin: 0;
+        text-align: left;
+    }
+
+    .indicativos__icon-principal{
+        vertical-align: middle;
+    } 
+}
+
+/*Bug! Vou resolver depois kk*/
+/*@media screen and (max-width: 480px){
+    .indicativos__icon-principal{
+        display: none;
+    }
+
+    .indicativos__titulo-principal{
+        font-size: 2.4rem;
+    }
+    
+    .valor{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        flex-basis: 50%;
+    }
+
+    .valor__cifrao{
+        width: 20%;
+    }
+    
+    .valor__campo{
+        width: 100%;
+    }
+
+    .valor__botao{
+        width: 40%;
+        margin: 10px;
+        flex-grow: 2;
+    }
+
+    .resultado{
+        flex-basis: 40%;
+    }
+
+    .footer{
+        display: none;    
+    }
+}
+*/
+@media screen and (min-width: 800px){
+    .instrucoes__info{
+        width: 80%;
+    }
+
+    .indicativos__titulo-principal{
+        font-size: 300%;
+    }
+    
+    .instrucoes__info__titulo{
+        font-size: 3.2rem;
+    }
+    
+    .instrucoes__info__desc{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .instrucoes__info{
+        width: 65%;
+    }
+
+    .indicativos__titulo-principal{
+        font-size: 300%;
+    }
+    
+    .instrucoes__info__titulo{
+        font-size: 3.6rem;
+    }
+    
+    .instrucoes__info__desc{
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "contadinho",
+  "version": "1.0.0",
+  "description": "Um app para que você conte o seu dinheiro de maneira mais fácil.",
+  "main": "js/calcular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "contadinho",
+    "dinheiro",
+    "contador",
+    "contar"
+  ],
+  "author": "Devison Deiró",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}
